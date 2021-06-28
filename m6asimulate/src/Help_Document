@@ -1,0 +1,13 @@
+To use:
+	-g	[string, must]	provide reference genome sequence file. (e¡£g. genome.fa)
+	-r	[string, must]	provide reference genome annotation file. (e.g. gencode.v25.annotation.gtf)
+	-p	[string, must]	provide peak positions, create file to store simulate peaks randomly generated if the file does not exist.
+	-m	[string, must]	provide mutation positions, create file to store simulate mutations randomly generated if the file does not exist.
+	-ip	[string, must, output]	file to store simulated IP fastq.
+	-in [string, must, output]	file to store simulated Input fastq.
+	-bn	[int]	Background number for simulation. (must > 0) (10 default)
+	-en	[float]	Peak enrichment number for simulation. (must >= 0) (15 default)
+	-sl	[int]	Segment length in pair_end simulation, single-end mode enable when no greater than read length. (200 ~ 450 recommend) (350 default)
+	-rl	[int]	Read length in simulation. (must > 0, 150 recommend) (150 default)
+	-mp	[float]	Proportion of mutation reads provided. (must ¡Ý 0.0 and ¡Ü 1.0) (0.5 default)
+	-h	[]	for help document.
